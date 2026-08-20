@@ -1,0 +1,82 @@
+!DOCTYPE html>
+<html amharic>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የፍቅር ጥያቄ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="My_Girlfriend">
+        <p class="My_Girlfriend_Text">ትወጂኛለሽ ወይ? ❤️</p>
+        <div class="buttons">
+            <button class="yes-btn">አዎ</button>
+            <button class="no-btn">አይ</button>
+        </div>
+    </div>
+</body>
+</html>
+
+:root {
+    --letter: #ffffff;
+    --letter-love: auto;
+    --pink-text: #ff69b4;
+    --dark-shadow: #888888;
+}
+
+body {
+    background-color: #ffd1dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.My_Girlfriend {
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    background: var(--letter);
+    height: var(--letter-love);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #333;
+    padding: 30px;
+    box-shadow: 10px 10px 0px #000;
+}
+
+.My_Girlfriend_Text {
+    font-size: 2.2rem;
+    color: var(--pink-text);
+    text-shadow: 2px 2px var(--dark-shadow);
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-family: inherit;
+    box-shadow: 5px 5px 0px #333;
+    transition: all 0.1s;
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px #333;
+}
+
